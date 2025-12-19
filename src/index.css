@@ -1,0 +1,99 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   
+  justify-content: center; 
+  min-height: 100vh;    
+  background: #aa0909;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(5, 150px); 
+  gap: 10px;
+  justify-content: center; 
+  margin: 20px 0;
+}
+
+.category-column h2 {
+  background: #18b63f;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.question-card {
+  height: 80px;
+  font-size: 24px;
+  background: #3c75aa;
+  color: rgb(47, 214, 9);
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 3px;
+}
+
+.question-card:disabled {
+  background: #333;
+  cursor: not-allowed;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: center; 
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.player {
+  padding: 10px 20px;
+  background: #998468;
+  border-radius: 10px;
+}
+
+.player.active {
+  border: 3px solid rgb(47, 214, 9);
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+
+  display: flex;         
+  justify-content: center; 
+  align-items: center;     
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+  z-index: 1001;
+}
+
+.final-scores {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.category-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.category-column h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
