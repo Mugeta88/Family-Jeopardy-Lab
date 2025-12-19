@@ -65,7 +65,7 @@ export default function App() {
 
   return (
     <div className="app">
-      <h1>🎄 Family Jeopardy 🎄</h1>
+      <h1>Family Jeopardy</h1>
 
       <ScoreBoard players={players} activePlayer={activePlayer} />
 
